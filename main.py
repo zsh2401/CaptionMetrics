@@ -5,9 +5,9 @@ from pycocoevalcap.rouge.rouge import Rouge
 from pycocoevalcap.spice.spice import Spice
 import json
 
-with open('examples/gts.json', 'r') as file:
+with open('./gts.json', 'r') as file:
     gts = json.load(file)
-with open('examples/res.json', 'r') as file:
+with open('./res.json', 'r') as file:
     res = json.load(file)
 
 def bleu():
